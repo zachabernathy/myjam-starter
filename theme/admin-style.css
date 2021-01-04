@@ -1,0 +1,96 @@
+[data-name*="gradient_direction"] .acf-button-group,
+[data-name*="image_position"] .acf-button-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  width: 90px;
+}
+
+[data-name*="gradient_direction"] .acf-button-group::before,
+[data-name*="gradient_direction"] .acf-button-group::after,
+[data-name*="image_position"] .acf-button-group::before,
+[data-name*="image_position"] .acf-button-group::after {
+  content: '';
+  width: 100%;
+  order: 1;
+}
+
+[data-name*="gradient_direction"] .acf-button-group label,
+[data-name*="image_position"] .acf-button-group label {
+  padding: 5px 0 0;
+  margin: 0 0 -1px -1px;
+}
+
+[data-name*="image_repeat"] .acf-button-group label {
+  padding: 5px 7px 0;
+}
+[data-name*="image_repeat"] .acf-button-group label .field-choice-text {
+  position: relative;
+  top: -2px;
+}
+
+[data-name*="gradient_direction"] .acf-button-group label:nth-child(n + 4),
+[data-name*="image_position"] .acf-button-group label:nth-child(n + 4) {
+  order: 1;
+}
+
+[data-name*="gradient_direction"] .acf-button-group label:nth-child(n + 7),
+[data-name*="image_position"] .acf-button-group label:nth-child(n + 7) {
+  order: 2;
+}
+
+[data-name*="gradient_direction"] .acf-button-group label:first-child,
+[data-name*="image_position"] .acf-button-group label:first-child {
+  border-radius: 3px 0 0 0;
+}
+
+[data-name*="gradient_direction"] .acf-button-group label:nth-child(3),
+[data-name*="image_position"] .acf-button-group label:nth-child(3) {
+  border-radius: 0 3px 0 0;
+}
+
+[data-name*="gradient_direction"] .acf-button-group label:nth-child(7),
+[data-name*="image_position"] .acf-button-group label:nth-child(7) {
+  border-radius: 0 0 0 3px;
+}
+
+[data-name*="gradient_direction"] .acf-button-group label:nth-child(9),
+[data-name*="image_position"] .acf-button-group label:nth-child(9) {
+  border-radius: 0 0 3px 0;
+}
+
+[data-name="background_colors"] ul.acf-checkbox-list li span,
+[data-name="overlay_colors"] ul.acf-checkbox-list li span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+  position: relative;
+  margin: 0 -19px;
+  border-radius: 3px;
+  z-index: -1;
+}
+
+[data-name="background_colors"] ul.acf-checkbox-list li span.custom,
+[data-name="overlay_colors"] ul.acf-checkbox-list li span.custom {
+  width: auto;
+  height: auto;
+  line-height: 1;
+  margin-left: -5px;
+}
+
+[data-name="background_colors"] ul.acf-checkbox-list li input[type="checkbox"],
+[data-name="overlay_colors"] ul.acf-checkbox-list li input[type="checkbox"] {
+  background: transparent;
+}
+
+[data-name="background_colors"] ul.acf-checkbox-list li input[type="checkbox"]:checked::before,
+[data-name="overlay_colors"] ul.acf-checkbox-list li input[type="checkbox"]:checked::before {
+  filter: brightness(0) contrast(3) grayscale(1);
+}
+
+[data-name="background_colors"] ul.acf-checkbox-list li input[type="checkbox"][value="custom"]:checked::before,
+[data-name="overlay_colors"] ul.acf-checkbox-list li input[type="checkbox"][value="custom"]:checked::before {
+  filter: none;
+}

@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'my-jam-social';
+  src:
+    url('fonts/my-jam-social.ttf?bp5qz6') format('truetype'),
+    url('fonts/my-jam-social.woff?bp5qz6') format('woff'),
+    url('fonts/my-jam-social.svg?bp5qz6#my-jam-social') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="mjs-icon-"], [class*=" mjs-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'my-jam-social' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mjs-icon-facebook:before {
+  content: "\e900";
+}
+.mjs-icon-github:before {
+  content: "\e901";
+}
+.mjs-icon-google:before {
+  content: "\e902";
+}
+.mjs-icon-instagram:before {
+  content: "\e903";
+}
+.mjs-icon-linkedin:before {
+  content: "\e904";
+}
+.mjs-icon-rss:before {
+  content: "\e905";
+}
+.mjs-icon-twitch:before {
+  content: "\e906";
+}
+.mjs-icon-twitter:before {
+  content: "\e907";
+}
+.mjs-icon-youtube:before {
+  content: "\e908";
+}
